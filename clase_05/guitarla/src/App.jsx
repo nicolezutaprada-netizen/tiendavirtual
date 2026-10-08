@@ -6,6 +6,7 @@ import Layout from "./layout/Layout"
 import Error404 from "./pages/Error404"
 import Catalogo from "./pages/Catalogo"
 import Producto from "./pages/Producto"
+import Admi from "./pages/Admi"
 export default function App() {
   // 🏅 REGLA DE ORO
   // Siempre los componentes retornan algo
@@ -19,7 +20,9 @@ export default function App() {
         <Route path="/contacto" element={<Contactanos />} />
         <Route path="/acerca" element={<Acerca />} />
         <Route path="/productos" element={<Producto />} />
+
         <Route path="/catalogo" element={<Catalogo/>} />
+        <Route path="/admi" element={<Admi />} />
         <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>
